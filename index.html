@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon card store</title>
+    <script src="cardCollecttor.js" type="application/javascript"></script>
+  </head>
+  <body onload="loadCards ()">
+    <table id="cardOptions">
+      <tr>
+        <td>
+          <input
+            type="checkbox"
+            id="raresOnly"
+            name="raresOnly"
+            value="raresOnly"
+            onclick="loadCards()"
+          />
+          <label for="raresOnly">Show rares Only</label>
+        </td>
+        <td>
+          <input
+            type="checkbox"
+            id="currency"
+            name="currency"
+            value="currency"
+            onclick="loadCards()"
+          />
+          <label for="currency">Show prices in EUR</label>
+        </td>
+      </tr>
+    </table>
+    <table id="myCards" border="1" width="75%"></table>
+  </body>
+</html>
